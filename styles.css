@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.form {
+  position: relative;
+  margin-inline: 1.5rem;
+  background-color: #ffffff1a;
+  border: 2px solid #ffffffb3;
+  padding: 2.5rem;
+  color: white;
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+.inputs,
+.box {
+  display: grid;
+}
+.inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+.box {
+  grid-template-columns: 1fr max-content;
+  column-gap: 0.75rem;
+  align-items: center;
+  border: 2px solid #ffffffb3;
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+.input,
+.button {
+  border: none;
+  outline: none;
+}
+.input {
+  width: 100%;
+  background: none;
+  color: white;
+  padding-block: 1rem;
+}
+.input::placeholder {
+  color: white;
+}
+.box i {
+  font-size: 1.25rem;
+}
+.check,
+.check-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.check {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+.check-box {
+  column-gap: 0.5rem;
+}
+.check-input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: white;
+}
+.forgot {
+  color: white;
+}
+.forgot:hover {
+  text-decoration: underline;
+}
+.button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 4rem;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.register {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.register a {
+  color: white;
+  font-weight: 500;
+}
+.register a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+  .form {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  .title {
+    margin-bottom: 2rem;
+  }
+}
